@@ -1,0 +1,407 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contain{
+    width:100vw;
+    height:100vh;
+    display:grid;
+    place-items:center;
+    background:linear-gradient(to bottom,#1e1e1e,#1a1919);
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+.lumia1{
+    width:50%;;
+    height:100%;;
+    position:absolute;
+    right:0%;
+    perspective: 500px;
+    position:absolute;
+    display: grid;
+    place-items:center;
+}
+#lumia1{
+    width:40%;
+    height:75%;
+    position:absolute;
+    z-index:10 ;
+   filter:drop-shadow(0vmin 10vmin 10vmin black);
+    opacity: 0;
+}
+#lumiaBack{
+    width:40%;
+    height:75%;
+    position:absolute;
+    transform:translateX(30%);
+    opacity: 10;
+    transition: all 400ms linear;
+}
+.lumia1:hover #lumiaBack{
+    opacity: 10;
+    z-index: 15;
+    animation:lumiaBack 500ms linear forwards;
+}
+@keyframes lumiaBack{
+    0%{
+        transform:translateX(50%);
+    }
+    100%{
+        transform:translateX(30%);
+    }
+}
+
+
+.lumia1Animation{
+    animation:lumia1 500ms linear forwards;
+}
+@keyframes lumia1{
+    0%{
+        transform: translateZ(-50vmin);
+        opacity: 0;
+    }
+    100%{
+        transform: translateZ(0vmin);
+        opacity: 10;
+    }
+}
+.lumia1Animation1{
+    animation:lumia2 500ms linear forwards;
+}
+@keyframes lumia2{
+    0%{
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(30%);
+        opacity: 10;
+    }
+}
+.lumia1Head{
+    position:absolute;
+    left:5%;
+    top:5%;
+    width:50%;
+    height:100%;
+}
+.lumia1Head > h1{
+    font-size: 10vmin;
+    transform:translateY(-10%);
+    position:absolute;
+    top:5%;
+    border-left:1vmin solid rgb(255, 255, 255);
+    padding:2vmin;
+    color:rgb(255, 255, 255);
+    animation:head 600ms linear forwards;
+}
+@keyframes head{
+    0%{
+        transform:translateX(-40%);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0%);
+        opacity: 10;
+    }
+}
+.lumia1Head> p{
+    position:absolute;
+    top:25%;
+    padding:1vmin 3vmin 1vmin 3vmin;
+    border-radius:1vmin;
+    background:black;
+    color:white;
+    font-size:3vmin;
+    text-transform:uppercase;
+    word-spacing: 1vmin;
+    line-height:8vmin;
+}
+.release{
+    position:absolute;
+    top:45%;
+    font-size:2vmin;
+    margin-top:3vmin;
+    word-spacing: .4vmin;
+}
+.display{
+    position:absolute;
+    top:50%;
+    font-size:2vmin;
+    margin-top:3vmin;
+    word-spacing: .4vmin;
+}
+.camera{
+    position:absolute;
+    top:55%;
+    font-size:2vmin;
+    margin-top:3vmin;
+    word-spacing: .4vmin;
+}
+.contain1{
+    width:100vw;
+    height: 100vh;
+    position:relative;;
+    padding:1vmin;
+    overflow:hidden;
+}
+.contain2{
+    width:100vw;
+    height: 100vh;
+    position:relative;;
+    overflow:hidden;
+}
+
+.headingColor{
+    font-size:3vmin;
+    width:100%;
+    height:10%;
+    position:absolute;
+    text-align: center;
+    z-index: 44;
+    top:3%;
+    font-weight: bold;
+} 
+.yellow,.white,.black{
+    width:33%;
+    height:100%;
+    position:absolute;
+}
+.yellow{
+    background:#e4d701;
+    left:0%;
+    
+}
+.black{
+    background:#2c2c2c;
+    right:0%;
+}
+.white{
+    background:#ffffff;
+    color:black;
+    left:33.4%;
+}
+
+#nokiaYellow{
+    width:50%;
+    height:60%;
+    left:20%;
+    position:absolute;
+    top:10%;
+    transform: translateX(-50%);
+    opacity: 0;
+    filter:drop-shadow(5vmin 10vmin 10vmin rgba(0, 0, 0, 0.418))
+}
+#nokiaWhite{
+    width:50%;
+    height:60%;
+    left:25%;
+    position:absolute;
+    top:10%;   opacity: 0;
+    filter:drop-shadow(5vmin 10vmin 10vmin rgba(0, 0, 0, 0.418))
+}
+#nokiaBlack{
+    width:50%;
+    height:60%;
+    left:25%;
+    position:absolute;
+    top:10%;   opacity: 0;
+    filter:drop-shadow(5vmin 10vmin 10vmin rgba(0, 0, 0, 0.418))
+}
+.yellowHead,.whiteHead,.blackHead{
+    font-size:5vmin;
+    position:absolute;
+    bottom:10%;
+    width: 100%;
+    text-align:center;
+    text-transform:uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow:0px 0px 2px black;
+}
+.yellowHead{
+    color:rgb(0, 0, 0);
+}
+.blackHead{
+    color:white;
+}
+.yellowHeadAnimation{
+    animation:yellowBox 400ms linear forwards;
+}
+@keyframes yellowBox{
+    0%{
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0%);
+        opacity: 10;
+    }
+}
+.blackHeadAnimation{
+    animation:blackBox 400ms linear forwards;
+}
+@keyframes blackBox{
+    0%{
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0%);
+        opacity: 10;
+    }
+}
+.whiteHeadAnimation{
+    animation:whiteBox 400ms linear forwards;
+}
+@keyframes whiteBox{
+    0%{
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(0%);
+        opacity: 10;
+    }
+}
+.contain2{
+    background:#dc3b3b;
+    position:relative;
+}
+
+.cameras{
+    width:50%;
+    height:100%;
+    position:absolute;
+    right:0%;
+    top:0%;
+   
+}
+#camera{
+    width:100%;
+    height:100%;
+    position:absolute;
+    right:0%;
+    top:0%;
+}
+.message{
+    color:white;
+    font-size:5vmin;
+    width: 50%;left:0%;
+    height:100%;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top:15%;
+    top:0%;
+    line-height: 15vmin;
+}
+.backgroundBlack{
+    width:100%;
+    height:100%;
+    position: absolute;
+    z-index: 12;
+    background:radial-gradient(circle at center,rgba(0, 0, 0, 0.438) 40%,rgba(0, 0, 0, 0.692) 100%)
+    
+}
+
+@media only screen and (max-width:750px){
+    .lumia1Head{
+        width:100%;
+        height:100%;
+    }
+    .lumia1Head > p{
+        top:15%;
+    }
+    .release{
+        top:25%;
+        font-size:3vmin;
+    }
+    .display{
+        top:30%;
+        font-size:3vmin;
+    }
+    .camera{
+        top:35%;
+        left:0%;
+        font-size:3vmin;
+    }
+    .lumia1{
+        bottom:-5%;
+        width:100%;
+        height:60%;
+        right:-8%;
+        z-index: 55;
+    }
+    .yellow,.black,.white{
+        width:100%;
+        height:34%;
+    }
+    .yellow{
+        top:0%;
+        left:0%;
+    }
+    .white{
+        top:33%;
+        left:0%;
+    }
+    .black{
+        bottom:0%;
+        left:0%
+    }
+
+    #nokiaBlack{
+        width:32%;
+        height:78%;
+       
+        left:60%
+    }
+    #nokiaYellow{
+        width:32%;
+        height:78%;
+    }
+    #nokiaWhite{
+        width:32%;
+        height:78%;
+        left:40%;
+    }
+  .yellowHead{
+      width:50%;
+      height:100%;
+      display: grid;
+      place-items:center;
+      right:0%;
+      top:0%;;
+  }
+  .whiteHead{
+      width:50%;
+      height:100%;
+      display: grid;
+      place-items:center;
+      left:0%;
+      top:0%;;
+  } 
+  .blackHead{
+      width:50%;
+      height:100%;
+      display: grid;
+      place-items:center;
+      left:0%;
+      top:0%;;
+  }
+  .headingColor{
+      top:0.1%;
+  }
+  .cameras{
+      width:100%;
+      height:66%;
+      top:35%;
+      position:absolute;
+  }
+  .message{
+      width:100%;
+      height:50%;
+      padding-top: 3%;
+  }
+}
